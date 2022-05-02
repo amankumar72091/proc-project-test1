@@ -1,0 +1,22 @@
+#%RAML 1.0
+baseUri: https://anypoint.mulesoft.com/mocking/api/v1/links/f1a5a1e1-5e64-48c0-a09c-092053c80136 # 
+title: proc-projects
+version: 1.0
+#baseUri: localhost:8081/api/
+protocols:  HTTPS
+mediaType: application/json
+
+/projects:     
+  post:
+    description: process an asset
+    body:
+      application/json:
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              
+          
+      409:
+        description: Instance {type}-{name} already exist
